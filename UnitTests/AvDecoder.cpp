@@ -15,7 +15,7 @@ namespace Display
 			return false;
 		}
 
-		if (!m_command_skipper->ShouldSkipCommand(a_display_id, "ConnectDisplay"))
+		if (m_command_skipper->ShouldSkipCommand(a_display_id, "ConnectDisplay"))
 		{
 			return false;
 		}

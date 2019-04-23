@@ -13,13 +13,22 @@ namespace UnitTests
 	public:
 		AvDecoderShould();
 	protected:
-		std::unique_ptr<Display::AvDecoder> m_sut;
 		fakeit::Mock<Display::IDisplayProvider> m_display_provider_mock;
+		fakeit::Mock<Display::ICommandSkipper> m_command_skipper;
+
+		std::unique_ptr<Display::AvDecoder> m_sut;
+	public:
+		void SetUp() override
+		{
+			fakeit::Fake(Dtor(m_display_provider_mock));
+			fakeit::Fake(Dtor(m_command_skipper));
+			m_sut = 
+				std::make_unique<Display::AvDecoder>(std::shared_ptr<Display::IDisplayProvider>(&m_display_provider_mock.get()), std::shared_ptr<Display::ICommandSkipper>(&m_command_skipper.get()));
+		}
 	};
 
 	AvDecoderShould::AvDecoderShould()
 	{
-		fakeit::Fake(Dtor(m_display_provider_mock));
-		m_sut = std::make_unique<Display::AvDecoder>(std::shared_ptr<Display::IDisplayProvider>(&m_display_provider_mock.get()), nullptr);
+
 	}
 }
