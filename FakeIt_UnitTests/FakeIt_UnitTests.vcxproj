@@ -164,7 +164,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\GoogleTest\GoogleTest\GoogleTest.vcxproj">
+    <ProjectReference Include="..\GoogleTest\GoogleTest.vcxproj">
       <Project>{1d7d3851-5fd1-4386-815d-b48067252b83}</Project>
     </ProjectReference>
     <ProjectReference Include="..\UnitTests\UnitTests.vcxproj">

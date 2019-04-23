@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoogleTest", "GoogleTest\GoogleTest.vcxproj", "{1D7D3851-5FD1-4386-815D-B48067252B83}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoogleMock", "..\GoogleMock\GoogleMock\GoogleMock.vcxproj", "{86C2F9D7-7CD2-4CDE-B74B-2DA738251127}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoogleMock", "GoogleMock\GoogleMock.vcxproj", "{86C2F9D7-7CD2-4CDE-B74B-2DA738251127}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

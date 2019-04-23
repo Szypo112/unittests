@@ -72,7 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\Szypo\source\repos\GoogleMock\GoogleMock\gmock\include;C:\Users\Szypo\source\repos\GoogleMock\GoogleMock\gmock;$(IncludePath)</IncludePath>
+    <IncludePath>.\gmock\include;.\gmock;../GoogleTest/gtest/include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
