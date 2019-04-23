@@ -404,3 +404,8 @@ MigrationBackup/
     Blog
     About
 
+/Catch_UnitTests/Debug Tests/Catch_UnitTests.tlog
+/UnitTests/Debug Test
+/UnitTests/Debug Tests/UnitTests.tlog
+/gmock_UnitTests/Debug Test
+/Debug Tests
